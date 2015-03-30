@@ -2,6 +2,8 @@
 
 Code for [this blobpost](http://codingwiththomas.blogspot.com/2011/05/k-means-clustering-with-mapreduce.html).
 
+Please note that this is an '''example''' and not production-ready code. If you want a productionalized and working clustering, use Mahout or Spark.
+
 Build
 -----
 
