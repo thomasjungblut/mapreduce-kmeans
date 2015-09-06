@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="lib/hadoop-core-1.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-math3-3.5.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/commons-math3-3.5-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-1.2-api-2.3.jar" sourcepath="lib/log4j-1.2-api-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-1.2-api-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-api-2.3.jar" sourcepath="lib/log4j-api-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-api-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-core-2.3.jar" sourcepath="lib/log4j-core-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-core-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-flume-ng-2.3.jar" sourcepath="lib/log4j-flume-ng-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-flume-ng-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-iostreams-2.3.jar" sourcepath="lib/log4j-iostreams-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-iostreams-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-jcl-2.3.jar" sourcepath="lib/log4j-jcl-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-api-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-jmx-gui-2.3.jar" sourcepath="lib/log4j-jmx-gui-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-jmx-gui-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-jul-2.3.jar" sourcepath="lib/log4j-jul-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-jul-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-nosql-2.3.jar" sourcepath="lib/log4j-nosql-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-nosql-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-slf4j-impl-2.3.jar" sourcepath="lib/log4j-slf4j-impl-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-slf4j-impl-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-taglib-2.3.jar" sourcepath="lib/log4j-taglib-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-taglib-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-to-slf4j-2.3.jar" sourcepath="lib/log4j-to-slf4j-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-to-slf4j-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/log4j-web-2.3.jar" sourcepath="lib/log4j-web-2.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/lib/log4j-web-2.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/google-collections-1.0-rc5.jar" sourcepath="lib/google-collections-1.0-rc5-sources.jar"/>
+	<classpathentry kind="lib" path="lib/trove-3.0.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
