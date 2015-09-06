@@ -104,7 +104,7 @@ public class KMeansClusteringJob {
 
 		FileStatus[] stati = fs.listStatus(result);
 		for (FileStatus status : stati) {
-			if (!status.isDirectory()) {
+			if (!status.isDir()) {
 				Path path = status.getPath();
 				if (!path.getName().equals("_SUCCESS")) {
 					LOG.info("FOUND " + path.toString());
