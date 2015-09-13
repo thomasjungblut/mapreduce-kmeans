@@ -23,7 +23,6 @@ public class KMeansClusteringJob {
 
 	private static final Logger LOG = LogManager.getLogger(KMeansClusteringJob.class);
 
-	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
 
 		int iteration = 1;
@@ -120,7 +119,6 @@ public class KMeansClusteringJob {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	public static void writeExampleVectors(Configuration conf, Path in, FileSystem fs) throws IOException {
 		try (SequenceFile.Writer dataWriter = SequenceFile.createWriter(fs, conf, in, ClusterCenter.class,
 				VectorWritable.class)) {
@@ -136,7 +134,6 @@ public class KMeansClusteringJob {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	public static void writeExampleCenters(Configuration conf, Path center, FileSystem fs) throws IOException {
 		try (SequenceFile.Writer centerWriter = SequenceFile.createWriter(fs, conf, center, ClusterCenter.class,
 				IntWritable.class)) {
