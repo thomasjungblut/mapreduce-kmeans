@@ -22,7 +22,6 @@ public class KMeansMapper extends Mapper<ClusterCenter, VectorWritable, ClusterC
 	private final List<ClusterCenter> centers = new ArrayList<>();
 	private DistanceMeasurer distanceMeasurer;
 
-	@SuppressWarnings("deprecation")
 	@Override
 	protected void setup(Context context) throws IOException, InterruptedException {
 		super.setup(context);

@@ -2,6 +2,8 @@ package de.jungblut.clustering.mapreduce;
 
 import java.io.IOException;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
@@ -13,17 +15,14 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import de.jungblut.clustering.model.ClusterCenter;
 import de.jungblut.clustering.model.VectorWritable;
 
 public class KMeansClusteringJob {
 
-	private static final Logger LOG = LogManager.getLogger(KMeansClusteringJob.class);
+	private static final Log LOG = LogFactory.getLog(KMeansClusteringJob.class);
 
-	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
 
 		int iteration = 1;
@@ -104,7 +103,7 @@ public class KMeansClusteringJob {
 
 		FileStatus[] stati = fs.listStatus(result);
 		for (FileStatus status : stati) {
-			if (!status.isDirectory()) {
+			if (!status.isDir()) {
 				Path path = status.getPath();
 				if (!path.getName().equals("_SUCCESS")) {
 					LOG.info("FOUND " + path.toString());
@@ -120,7 +119,6 @@ public class KMeansClusteringJob {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	public static void writeExampleVectors(Configuration conf, Path in, FileSystem fs) throws IOException {
 		try (SequenceFile.Writer dataWriter = SequenceFile.createWriter(fs, conf, in, ClusterCenter.class,
 				VectorWritable.class)) {
@@ -136,7 +134,6 @@ public class KMeansClusteringJob {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	public static void writeExampleCenters(Configuration conf, Path center, FileSystem fs) throws IOException {
 		try (SequenceFile.Writer centerWriter = SequenceFile.createWriter(fs, conf, center, ClusterCenter.class,
 				IntWritable.class)) {

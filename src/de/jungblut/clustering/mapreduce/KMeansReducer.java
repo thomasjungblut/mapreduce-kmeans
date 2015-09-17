@@ -50,7 +50,6 @@ public class KMeansReducer extends Reducer<ClusterCenter, VectorWritable, Cluste
 
 	}
 
-	@SuppressWarnings("deprecation")
 	@Override
 	protected void cleanup(Context context) throws IOException, InterruptedException {
 		super.cleanup(context);

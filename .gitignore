@@ -1,9 +1,7 @@
 /bin
-/.settings
 /.idea
 /thomasjungblut-common.eml
 /thomasjungblut-common.iml
-/.project
-/.classpath
 /target
-/lib
+/.settings
+/lib/old
